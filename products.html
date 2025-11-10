@@ -1,0 +1,481 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>גלו כוסות קפה מעוצבות לבית — מאגי</title>
+  <meta name="description" content="קולקציית המוצרים המלאה של מאגי: כוסות קפה מעוצבות לבית, כוסות ממותגות למתנות עסקיות וסט כוסות יין זכוכית איכותיות במגוון עיצובים.">
+  <meta name="keywords" content="כוסות קפה מעוצבות לבית, כוסות ממותגות למתנות עסקיות, סט כוסות יין זכוכית איכותיות, מאגי">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: static;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: '2354bf61-456d-420f-b7a1-0787dc302fc4',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <a href="/" class="logo-link">
+          <img src="assets/logo.webp" alt="מאגי" class="logo" />
+        </a>
+      </div>
+      
+      <button class="mobile-toggle" id="mobileToggle" aria-label="תפריט">
+        <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      
+      <button class="phone-header-btn" aria-label="התקשרו אלינו">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/products">מוצרים</a></li>
+        <li><a href="/about">אודות</a></li>
+      </ul>
+      
+      <div class="nav-cta-container">
+        <li class="nav-cta-item">
+          <a href="/contact" class="nav-cta-btn">צור קשר</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>הקולקציה המלאה שלנו</h1>
+      <h3>גלו את מגוון הכוסות המעוצבות והאיכותיות של מאגי</h3>
+    </div>
+  </section>
+
+  <section class="products-showcase">
+    <div class="container">
+      <div class="product-category">
+        <h2>כוסות קפה מעוצבות לבית</h2>
+        <p>הכוסות הכי פופולריות שלנו בקרב חובבי קפה ואספני עיצוב הבית. כל כוס קפה מעוצבת לבית נבחרה בקפידה ומציעה שילוב מושלם של פונקציונליות ועיצוב. בין אם אתם מחפשים כוס לשימוש יומיומי או כוס מיוחדת לאירועים, תמצאו כאן את מה שאתם מחפשים.</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <img data-placeholder="service-4" data-context="Minimalist ceramic coffee mug with geometric patterns in earth tones on marble surface" src="assets/service-service-4.webp" alt="כוס קפה מינימליסטית מאגי" class="product-img">
+            <h3>כוס קפה מינימליסטית</h3>
+            <p>עיצוב נקי ומודרני בגוונים טבעיים. מושלמת לשימוש יומיומי ומשתלבת בכל מטבח.</p>
+          </div>
+          <div class="product-card">
+            <img data-placeholder="service-5" data-context="Vintage style coffee mug with floral patterns and gold rim on wooden table" src="assets/service-service-5.webp" alt="כוס קפה וינטג' מאגי" class="product-img">
+            <h3>כוס קפה וינטג'</h3>
+            <p>עיצוב קלאסי עם פרטי זהב ודוגמאות פרחוניות. מוסיפה נופך רומנטי לכל שולחן.</p>
+          </div>
+          <div class="product-card">
+            <img data-placeholder="service-6" data-context="Modern artistic coffee mug with abstract colorful design on contemporary table setting" src="assets/service-service-6.webp" alt="כוס קפה אמנותית מאגי" class="product-img">
+            <h3>כוס קפה אמנותית</h3>
+            <p>עיצוב ייחודי ומודרני עם דוגמאות אבסטרקטיות. כל כוס היא יצירת אמנות קטנה.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-category">
+        <h2>כוסות ממותגות למתנות עסקיות</h2>
+        <p>הפתרון המושלם לחברות ועסקים שמחפשים מתנות יוקרתיות ומקצועיות. כוסות ממותגות למתנות עסקיות שלנו מציעות אפשרות למיתוג אישי עם לוגו החברה, מסר אישי או עיצוב מותאם אישית. אידיאלי לאירועי חברה, מתנות ללקוחות VIP ומתנות לעובדים בחגים.</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <img data-placeholder="service-7" data-context="Elegant corporate branded mug set in premium gift box with company logo" src="assets/service-service-7.webp" alt="סט כוסות ממותג פרימיום" class="product-img">
+            <h3>סט כוסות פרימיום</h3>
+            <p>סט יוקרתי של 4 כוסות באריזת מתנה מהודרת עם אפשרות למיתוג מלא.</p>
+          </div>
+          <div class="product-card">
+            <img data-placeholder="service-8" data-context="Professional business gift mug with custom engraving and sleek design" src="assets/service-service-8.webp" alt="כוס עסקית מותאמת אישית" class="product-img">
+            <h3>כוס עסקית מותאמת</h3>
+            <p>כוס יחידה באיכות גבוהה עם חריטה או הדפסה מקצועית של הלוגו שלכם.</p>
+          </div>
+          <div class="product-card">
+            <img data-placeholder="service-9" data-context="Luxury corporate gift set with branded mugs and accessories in wooden box" src="assets/service-service-9.webp" alt="סט מתנה עסקי יוקרתי" class="product-img">
+            <h3>סט מתנה יוקרתי</h3>
+            <p>חבילת מתנה מושלמת הכוללת כוסות ממותגות ואקססוריז משלימים.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-category">
+        <h2>סט כוסות יין זכוכית איכותיות</h2>
+        <p>עבור חובבי היין והמארחים המושלמים. סט כוסות יין זכוכית איכותיות שלנו מיוצרים מזכוכית קריסטל פרימיום ומעוצבים בקפידה כדי להעצים את חוויית שתיית היין. כל סט כולל 4-6 כוסות תואמות באריזה מהודרת, מושלם למתנה או לשימוש אישי.</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <img data-placeholder="service-10" data-context="Premium crystal wine glass set of 6 arranged elegantly on fine dining table" src="assets/service-service-10.webp" alt="סט 6 כוסות יין קריסטל" class="product-img">
+            <h3>סט 6 כוסות יין</h3>
+            <p>סט מושלם של 6 כוסות יין מזכוכית קריסטל באיכות מעולה לאירוח מושלם.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-features">
+    <div class="container">
+      <h2>מה מייחד את המוצרים של מאגי?</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <i class="fas fa-shield-alt"></i>
+          <h3>איכות מובטחת</h3>
+          <p>כל מוצר עובר בדיקת איכות קפדנית ומגיע עם אחריות מלאה.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-truck"></i>
+          <h3>משלוח מהיר</h3>
+          <p>משלוח מהיר לכל הארץ עם אריזה מאובטחת שמבטיחה הגעה בשלמות.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-paint-brush"></i>
+          <h3>עיצוב מותאם אישית</h3>
+          <p>אפשרות למיתוג אישי, חריטה ועיצוב מותאם לצרכים שלכם.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-gift"></i>
+          <h3>אריזת מתנה</h3>
+          <p>כל מוצר מגיע באריזה מהודרת, מוכן למתנה ללא עלות נוספת.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>מעוניינים להזמין?</h2>
+      <p>צרו איתנו קשר לפרטים נוספים, הצעת מחיר או הזמנה מותאמת אישית</p>
+      <a href="/contact" class="btn-cta">צרו קשר עכשיו</a>
+    </div>
+  </section>
+
+  <a href="https://wa.me/[whatsapp_handle]" target="_blank" class="whatsapp-float" aria-label="WhatsApp" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  
+    <!-- Legal Footer -->
+    <footer class="legal-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="all-rights-reserved">
+            <p>© 2025 מאגי. כל הזכויות שמורות.</p>
+          </div>
+          <div class="footer-social"><a href="https://facebook.com/[facebook_handle]" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://instagram.com/[instagram_handle]" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/[whatsapp_handle]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+          <div class="footer-legal">
+            <a href="privacy.html" aria-label="מדיניות פרטיות">
+              מדיניות פרטיות
+            </a>
+            <span class="separator">|</span>
+            <a href="accessibility.html" aria-label="נגישות">
+              נגישות
+            </a>
+            <span class="separator">|</span>
+            <a href="terms.html" aria-label="תנאי שימוש">
+              תנאי שימוש
+            </a>
+          </div>
+        </div>
+        <div class="zappy-attribution">
+          <p>נוצר באמצעות <a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Zappy</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = '2354bf61-456d-420f-b7a1-0787dc302fc4';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('https://api.zappy5.com/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          header.style.display = 'block';
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+    <script src="script.js"></script>
+</body></html>
